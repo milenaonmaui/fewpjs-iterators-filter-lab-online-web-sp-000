@@ -4,7 +4,7 @@ findMatching = (drivers, str) => {
   return results
 }
 
-fuzzyMatch = (drivers, str) => {
+function fuzzyMatch(drivers, str){
   let len = str.length;
   return drivers.filter(driver => driver.toLowerCase().slice(len) === str.toLowerCase())
 }
