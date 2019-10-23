@@ -9,3 +9,5 @@ function fuzzyMatch(drivers, str){
   let result = drivers.filter(driver => driver.startsWith(str))
   return result
 }
+
+function matchName
