@@ -6,6 +6,6 @@ findMatching = (drivers, str) => {
 
 function fuzzyMatch(drivers, str){
   let len = str.length;
-  let result = drivers.filter(driver => driver.slice(len) === str)
-  console.log(result)
+  let result = drivers.filter(driver => driver.startsWith(str))
+  return result
 }
